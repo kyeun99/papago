@@ -242,7 +242,7 @@ section
 {
 	width: 193px;
 	height: 72px;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 	text-align: center;
 	border-radius: 36px;
 	-webkit-transition: all 200ms ease;
@@ -293,7 +293,7 @@ section
 	background: #3f6fce;
 	z-index: 200;
 	border-bottom: solid 1px transparent;
-    border-image: linear-gradient(to right, #487fee, #32fa95);
+    border-image: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
     border-image-slice: 1;
     -webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
@@ -358,7 +358,7 @@ section
 {
 	height: 43px;
     border-radius: 22px;
-    background: linear-gradient(to right, #487fee, #32fa95);
+    background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
     padding: 2px;
     overflow: hidden;
 }
@@ -408,7 +408,7 @@ section
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 	z-index: 201;
 	opacity: 0;
 	visibility: hidden;
@@ -681,7 +681,7 @@ section
 	font-weight: 700;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 }
 
 /*********************************
@@ -704,7 +704,7 @@ section
 	width: 78px;
 	height: 113px;
 	border-radius: 39px;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 }
 .news_post_day
 {
@@ -834,7 +834,7 @@ section
 	width: 100%;
 	height: 3px;
 	content: '';
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 }
 .sidebar_top_search_input
 {
@@ -1028,7 +1028,7 @@ section
 	top: -68px;
 	width: 100%;
 	height: 68px;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 	color: #FFFFFF;
 	text-align: center;
 	line-height: 68px;
@@ -1141,7 +1141,7 @@ section
 }
 .rangeslider__fill
 {
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 }
 .rangeslider__handle
 {
@@ -1191,7 +1191,7 @@ section
 	font-weight: 700;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 }
 
 /*********************************
@@ -1295,7 +1295,7 @@ section
 	font-weight: 700;
 	cursor: pointer;
 	text-transform: uppercase;
-	background: linear-gradient(to right, #487fee, #32fa95);
+	background: linear-gradient(to right, rgba(255,0,0,0.3), #32fa95);
 }
 .newsletter_button:active
 {
