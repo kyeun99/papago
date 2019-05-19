@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div stype ='text-align:left'>
+        <img src="flower1.jpg" alt="flower1" width="1200" height="1000">
+    </div>    
+    <div style="text-align:right">
+        <form action = "{% url 'orderlist' %}" method = 'POST'>
+            날짜:
+            <input type='date'><br>
+            수량:
+        <input type='number'><br>
+        사이즈:
+        <input list="size" name="size">
+        <datalist id="size">
+            <option value="Small">
+            <option value="Medium">
+            <option value="Large">
+        </datalist>
+        <br>
+        <input type='submit'>
+        </form>
+    </div>
+{% endblock %}
