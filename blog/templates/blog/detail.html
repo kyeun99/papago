@@ -1,9 +1,6 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
 {% block content %}
-    <div type ='text-align:left'>
-        <img src="{% static 'images/flower1.jpg' %}" alt="flower1" width="1200" height="1000">
-    </div>    
     <div style="text-align:right">
         <form action = "{% url 'orderlist' %}" method = 'POST'>
             날짜:
