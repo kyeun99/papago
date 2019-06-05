@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}	
+  <div class="button recent_button"><a href="{% url 'blognew' %}">ADD QUESTION</a></div>
+{% for blog in posts %}
+  <br>
+  <div class="card">
+      <div class="card-body">
+          <h5 class="card-title">{{blog.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{blog.pub_date}}</h6>
+          <p class="card-text">{{blog.summary}}</p>
+          <a href="{% url 'blogdetail' blog.id %}" class="card-link">...more</a>
+      </div>
+  </div>
+{%endfor%}
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}	
+  <div class="button recent_button"><a href="{% url 'clognew' %}">ADD QUESTION</a></div>
+{% for clog in costs %}
+  <br>
+  <div class="card">
+      <div class="card-body">
+          <h5 class="card-title">{{clog.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{clog.pub_date}}</h6>
+          <p class="card-text">{{clog.summary}}</p>
+          <a href="{% url 'clogdetail' clog.id %}" class="card-link">...more</a>
+      </div>
+  </div>
+{%endfor%}
+
+{% endblock %}

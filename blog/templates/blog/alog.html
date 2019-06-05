@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}	
+
+  <div class="button recent_button"><a href="{% url 'alognew' %}">ADD QUESTION</a></div>
+{% for alog in aosts %}
+  <br>
+  <div class="card">
+      <div class="card-body">
+          <h5 class="card-title">{{alog.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{alog.pub_date}}</h6>
+          <p class="card-text">{{alog.summary}}</p>
+          <a href="{% url 'alogdetail' alog.id %}" class="card-link">...more</a>
+      </div>
+  </div>
+{%endfor%}
+
+{% endblock %}

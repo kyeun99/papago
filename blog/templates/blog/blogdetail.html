@@ -1,0 +1,28 @@
+{% extends 'blog/base.html' %}
+{% block content %}	
+<br>
+<br>
+<div class="container jumbotron">
+    <h1>{{ blog.title }}</h1>
+    <p>{{ blog.pub_date }}</p>
+    <p>{{ blog.body }}</p>
+    <a href="{% url 'blog' %}">return</a>
+</div>
+<br>
+<br>
+<div class = "align-right card">
+    <a class="btn" href = "{% url 'blogcomment_new' blog.id %}">댓글달기</button>
+       
+        <ul>
+            {%for comment in blog.comments.all %}
+                <li> 
+                {{comment.text}}
+                <small>by {{comment.author}}, {{comment.created_at}}</small>
+                </li>
+            {% empty %}
+                <p>아직 작성된 댓글이 없습니다.</p>
+            {% endfor %}
+            
+    </ul>
+</div>
+{% endblock %}

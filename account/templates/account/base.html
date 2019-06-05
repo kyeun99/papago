@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>꽃송이가</title>
+<title>ê½ƒì†¡ì�´ê°€</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Bluesky template project">
@@ -47,32 +47,19 @@
 
 	<!-- Header -->
 
-	<header style="background:rgba(104, 153, 218, 0.3); border-bottom:0;">
+	<header style="background:rgba(131, 178, 240, 0.3); border-bottom:0;">
 <!--style="background-color: lightcoral"--> 
 		<div class="container">
 			<div class="row">
 				<div class="col">
 					<div class="header_content d-flex flex-row align-items-center justify-content-start">
 						<div class="logo">
-							<a href="#"><img src="./static/blog/images/logo.png" alt=""></a>
+							<a href="#"><img src="/static/blog/images/logo.png" alt=""></a>
 						</div>
 						<nav class="main_nav">
 							<ul>
-								{% if user.is_authenticated %}
-								<li class="active"><a href="{% url 'home' %}">Home</a></li>
-								<li><a href="{% url 'blog' %}">Correction</a></li>
-								<li><a href="{% url 'alog' %}">Composition</a></li>
-								<li><a href="{% url 'clog' %}">Expression question</a></li>
-								<li><a href="javascript:{document.getElementById('logout').submit()}">Logout</a></li>
-								<form id="logout" method="POST" action="{% url 'logout' %}">
-									{% csrf_token %} <input type="hidden" />
-								</form>
-								{% else %}
-								<li class="active"><a href="{% url 'home' %}">Home</a></li>
 								<li><a href="{% url 'login' %}">Login</a></li>
 								<li><a href="{% url 'signup' %}">Signup</a></li>
-								{% endif %}
-
 							</ul>
 						</nav>
 						<div class="hamburger ml-auto"><i class="fa fa-bars" aria-hidden="true"></i></div>
@@ -109,7 +96,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </div>
 
-							<div class="footer_phone ml-auto"><span>contact us: </span>010-9324-4388</div>
+							<div class="footer_phone ml-auto"><span>call us: </span>010-1234-1234</div>
 						</div>
 					</div>
 				</div>
