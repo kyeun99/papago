@@ -1,0 +1,31 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<<div style="background-color: DeepSkyBlue; color: white; padding: 10px;"> 
+  <h1><strong>YONPAGO</strong></h1>
+  <div class="container mt-5">
+    <h2> 제목 : {{ bost.title }}</h2>
+    <br>
+    <br>
+    <h3> : {{ bost.explain }}</h3>
+  </div>
+  <a href = "{% url 'postthree' %}">뒤로가기</a>
+</div>
+<br>
+<br>
+<br>
+<div style="background-color: rgb(80, 164, 241); color: white; padding: 50px;">
+  <a class="card" href = "{% url 'comment_dew' bost.pk %}">댓글달기</h3>
+    <ul style="text-align:right" >
+      {%for comment in bost.comments.all %}
+      <li>
+          {{comment.text}}
+          <p>by {{comment.author}}, {{comment.created_at}}</p>
+      </li>
+      {% empty %}
+      <p>아직 작성된 댓글이 없습니다.</p>
+      {% endfor %}
+    </ul>
+  </a>
+</div>
+{% endblock %}
