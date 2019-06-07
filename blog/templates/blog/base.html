@@ -40,6 +40,7 @@
 		border: 0;
 	}
 </style>
+<meta charset="utf-8">
 </head>
 <body>
 
@@ -61,8 +62,8 @@
 								{% if user.is_authenticated %}
 								<li class="active"><a href="{% url 'home' %}">Home</a></li>
 								<li><a href="{% url 'blog' %}">Correction</a></li>
-								<li><a href="{% url 'alog' %}">Composition</a></li>
-								<li><a href="{% url 'clog' %}">Expression question</a></li>
+								<li><a href="{% url 'alog' %}">Grammer question</a></li>
+								<li><a href="{% url 'clog' %}">Daily Expression</a></li>
 								<li><a href="javascript:{document.getElementById('logout').submit()}">Logout</a></li>
 								<form id="logout" method="POST" action="{% url 'logout' %}">
 									{% csrf_token %} <input type="hidden" />

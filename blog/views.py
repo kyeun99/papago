@@ -76,7 +76,7 @@ def alogcreate(request):
     return redirect('/alog/' + str(alog.id))
 
 def clogcreate(request):
-    clog = Blog1()
+    clog = Blog3()
     clog.title = request.GET['title']
     clog.body = request.GET['body']
     clog.pub_date = timezone.datetime.now()

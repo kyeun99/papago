@@ -2,7 +2,9 @@
 {% load staticfiles %}
 
 {% block content %}	
+<br><br>
   <div class="button recent_button"><a href="{% url 'blognew' %}">ADD QUESTION</a></div>
+  <br><br>
 {% for blog in posts %}
   <br>
   <div class="card">
