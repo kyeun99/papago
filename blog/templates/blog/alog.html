@@ -17,4 +17,22 @@
   </div>
 {%endfor%}
 
+<div clss="container mt5">
+  {%if aosts.has_previous%}
+  <a href="?page=1">First</a>
+  <a href="?page={{aosts.previous_page_number}}">Previous</a>
+  {%endif%}
+  <br>
+  <br>
+  <br>
+
+  {%if aosts.has_next%}
+  <a href="?page={{aosts.next_page_number}}">Next</a>
+  {%endif%}
+  <span>{{aosts.number}}</span>
+  <span>of</span>
+  <span>{{aosts.paginator.num_pages}}</span>
+  {%if aosts.has_next%}
+  <a href="?page={{aosts.paginator.num_pages}}">Last</a>
+  {%endif%}
 {% endblock %}

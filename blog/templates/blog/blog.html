@@ -17,4 +17,32 @@
   </div>
 {%endfor%}
 
+{%if posts.has_previous%}
+<a href="?page=1">First</a>
+<a href="?page={{posts.previous_page_number}}">Previous</a>
+{%endif%}
+
+<span>{{posts.number}}</span>
+<span>of</span>
+<span>{{posts.paginator.num_pages}}</span>
+
+{%if posts.has_next%}
+<a href="?page={{posts.next_page_number}}">Next</a>
+<a href="?page={{posts.paginator.num_pages}}">Last</a>
+{%endif%}
+
+<br>
+<br>
+<br>
+
+{%if bosts.has_next%}
+<a href="?page={{bosts.next_page_number}}">Next</a>
+{%endif%}
+<span>{{bosts.number}}</span>
+<span>of</span>
+<span>{{bosts.paginator.num_pages}}</span>
+{%if bosts.has_next%}
+<a href="?page={{bosts.paginator.num_pages}}">Last</a>
+{%endif%}
+
 {% endblock %}

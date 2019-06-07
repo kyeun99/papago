@@ -16,5 +16,17 @@
       </div>
   </div>
 {%endfor%}
+  <br>
+  <br>
+  <br>
 
+  {%if costs.has_next%}
+  <a href="?page={{costs.next_page_number}}">Next</a>
+  {%endif%}
+  <span>{{costs.number}}</span>
+  <span>of</span>
+  <span>{{costs.paginator.num_pages}}</span>
+  {%if costs.has_next%}
+  <a href="?page={{costs.paginator.num_pages}}">Last</a>
+  {%endif%}
 {% endblock %}
