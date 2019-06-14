@@ -122,3 +122,5 @@ def clogcomment_new(request, clog_id):
         form = EommentForm()
     return render(request, 'blog/clogcomment_new.html', {'form': form})
 
+def about(request):
+    return render(request, 'blog/about.html')

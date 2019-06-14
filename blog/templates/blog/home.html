@@ -45,7 +45,6 @@
 								<div class="recent_item">
 									<div class="recent_item_inner">
 										<div class="recent_item_image">
-											<img src="#" alt="">
 											<div class="tag_featured property_tag"><a href="#"></a></div>
 										</div>
 										<div class="recent_item_body text-center">
@@ -61,7 +60,6 @@
 								<div class="recent_item">
 									<div class="recent_item_inner">
 										<div class="recent_item_image">
-											<img src="#" alt="">
 											<div class="tag_offer property_tag"><a href="#"></a></div>
 										</div>
 										<div class="recent_item_body text-center">
@@ -78,7 +76,6 @@
 								<div class="recent_item">
 									<div class="recent_item_inner">
 										<div class="recent_item_image">
-											<img src="#" alt="">
 											<div class="tag_featured property_tag"><a href="#"></a></div>
 										</div>
 										<div class="recent_item_body text-center">
@@ -99,11 +96,38 @@
 
 	<!-- Testimonials -->
 	{% else %}
-	<br>
-	<br>
-	<br>
-	<div class="button recent_button"><a href="{% url 'signup' %}">Sign Up</a></div><div class="button recent_button"><a href="{% url 'login' %}">Log In</a></div><div class="button recent_button"><a href="https://open.kakao.com/o/g8kTm1jb ">Open kakao</a></div>
 
+	<div class="testimonials">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title">About YONPAGO</div>
+					<div class="section_subtitle">Yonsei + Papago</div>
+				</div>
+			</div>
+			<div class="row testimonials_row">
+				<div class="owl-item">
+					<div class="recent_item">
+						<div class="recent_item_inner">
+							<div class="recent_item_image">
+								<div class="tag_offer property_tag"><a href="#"></a></div>
+							</div>
+							<div class="recent_item_body text">>
+								<div class="testimonial_title">We are Yonsei Education major students working on a project where foreigners in Yonsei could get help with Korean language problems.<br> We are happy to give you any help without fee.
+									<br><br>Any questions regarding 
+									<br>-Daily expressions in Korean in everyday life 
+									<br>-Grammar questions 
+									<br>-Academic essay expression 
+									<br> are welcome here. <br><br>For your convenience, join "OPEN KAKAO" above to get help at anywhere anytime.
+									<br>(Long essay corrections are recommended to be posted on website please)
+									<br> You may also learn and practice daily expressions additionally in open chatting room via Kakaotalk :)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div class="testimonials">
 		<div class="container">
@@ -120,7 +144,7 @@
 					<div class="testimonial">
 						<div class="testimonial_title"> 1. Join Open kakaoTalk room </div>
 						<div class="testimonial_text"> https://open.kakao.com/o/g8kTm1jb </div>
-						<div class="testimonial_author_image"><img src="#" alt=""></div>
+						<div class="testimonial_author_image"></div>
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
@@ -130,7 +154,7 @@
 					<div class="testimonial">
 						<div class="testimonial_title">2. Sign up & Log in</div>
 						<div class="testimonial_text">Please look at the nav-bar above.</div>
-						<div class="testimonial_author_image"><img src="#" alt=""></div>
+						<div class="testimonial_author_image"></div>
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
@@ -140,7 +164,8 @@
 					<div class="testimonial">
 						<div class="testimonial_title">3. Posting your question </div>
 						<div class="testimonial_text">Ask native speakers directly by posting your question</div>
-						<div class="testimonial_author_image"><img src="#" alt=""></div>
+						<div class="testimonial_author_image">
+						</div>
 						<div class="rating_r rating_r_5 testimonial_rating"><i></i><i></i><i></i><i></i><i></i></div>
 					</div>
 				</div>
@@ -148,39 +173,10 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="testimonials">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="section_title">About YONPAGO</div>
-					<div class="section_subtitle">Yonsei + Papago</div>
-				</div>
-			</div>
-			<div class="row testimonials_row">
-				<div class="owl-item">
-					<div class="recent_item">
-						<div class="recent_item_inner">
-							<div class="recent_item_image">
-								<img src="#" alt="">
-								<div class="tag_offer property_tag"><a href="#"></a></div>
-							</div>
-							<div class="recent_item_body text-center">
-								<div class="recent_item_location"></div>
-								<div class="recent_item_title">We are Yonsei Education major students working on a project where foreigners in Yonsei could get help with Korean language problems. Any questions regarding
-									<br>Daily expressions in Korean in everyday life 
-									<br>grammar questions 
-									<br>Academic essay expression 
-									<br>You may learn and practice daily expressions additionally in open chatting room via Kakaotalk 
-								<div class="recent_item_price"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	
+	<div class="button recent_button"><a href="{% url 'signup' %}">Sign Up</a></div><div class="button recent_button"><a href="{% url 'login' %}">Log In</a></div><div class="button recent_button"><a href="https://open.kakao.com/o/g8kTm1jb ">Open kakao</a></div>
+	<div class="button recent_button"><a href="{% url 'alog' %}">Grammar</a></div>
+	<div class="button recent_button"><a href="{% url 'clog' %}">Daily Expression</a></div>
 
 	{% endif %}
 	<!-- Newsletter -->
